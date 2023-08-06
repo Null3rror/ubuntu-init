@@ -1,3 +1,3 @@
 echo "Setting up firewall"
 sudo ufw allow ssh
-sudo ufw enable
+echo "y" | sudo ufw enable
