@@ -1,3 +1,4 @@
+echo "Installing fail2ban"
 sudo apt-get -y install fail2ban
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 sudo sed -i -e '/^\[sshd\]/a enabled=true' /etc/fail2ban/jail.local
